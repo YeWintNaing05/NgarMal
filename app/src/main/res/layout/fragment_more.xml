@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.team28.borrow.util.custom_view.MMTextView
+        android:id="@+id/txtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_25sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:text="Ye Wint Naing"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/material_text_subhead"
+
+        />
+
+    <com.team28.borrow.util.custom_view.MMTextView
+        android:id="@+id/txtPhoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtUserName"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:paddingLeft="@dimen/_25sdp"
+        android:text="09951158431" />
+
+
+    <RelativeLayout
+        android:id="@+id/fbLayout"
+        style="@style/layout_style"
+        android:layout_below="@id/txtPhoneNum">
+
+        <ImageView
+            android:id="@+id/imgFb"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fb"
+            android:tint="@color/secondaryText" />
+
+        <com.team28.borrow.util.custom_view.MMTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_toRightOf="@id/imgFb"
+            android:text="@string/ngar_mal_facebook_page"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/material_text_body1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/aboutLayout"
+        style="@style/layout_style"
+
+        android:layout_below="@id/fbLayout">
+
+        <ImageView
+            android:id="@+id/imgAboutUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/secondaryText"
+            app:srcCompat="@drawable/ic_about_black_24dp" />
+
+        <com.team28.borrow.util.custom_view.MMTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_toRightOf="@id/imgAboutUs"
+            android:text="@string/about_us"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/material_text_body1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/historyLayout"
+        style="@style/layout_style"
+        android:layout_below="@id/aboutLayout">
+
+        <ImageView
+            android:id="@+id/imgHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/secondaryText"
+            app:srcCompat="@drawable/ic_restore_black_24dp" />
+
+        <com.team28.borrow.util.custom_view.MMTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_toRightOf="@id/imgHistory"
+            android:text="@string/history"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/material_text_body1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shareLayout"
+        style="@style/layout_style"
+        android:layout_below="@id/historyLayout"
+
+        >
+
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/secondaryText"
+            app:srcCompat="@drawable/ic_share_black_24dp" />
+
+        <com.team28.borrow.util.custom_view.MMTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_toRightOf="@id/imgShare"
+            android:text="@string/share_app"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/material_text_body1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logoutLayout"
+        style="@style/layout_style"
+        android:layout_below="@id/shareLayout"
+
+        >
+
+        <ImageView
+            android:id="@+id/imgLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/secondaryText"
+            app:srcCompat="@drawable/ic_exit_to_app_black_24dp" />
+
+        <com.team28.borrow.util.custom_view.MMTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_toRightOf="@id/imgLogout"
+            android:text="@string/log_out"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/material_text_body1" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

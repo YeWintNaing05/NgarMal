@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_category_item_list"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.team28.borrow.presentation.feature.item_list.CategoryItemListActivity">
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/cvSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+
+        <EditText
+            android:id="@+id/edtSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic_search_black_24dp"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:padding="@dimen/_5sdp" />
+
+
+    </android.support.design.card.MaterialCardView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvItemList"
+        android:layout_below="@+id/cvSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

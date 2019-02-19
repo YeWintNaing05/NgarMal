@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    >
+
+
+    <ImageView
+        android:id="@+id/imgCategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+    <com.team28.borrow.util.custom_view.MMTextView
+        android:id="@+id/txtItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgCategory"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/material_text_body2"
+        android:paddingStart="@dimen/_5sdp" />
+
+    <com.team28.borrow.util.custom_view.MMTextView
+        android:id="@+id/txtBrandName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtItemName"
+        android:paddingLeft="@dimen/_5sdp"
+        android:textSize="@dimen/material_text_caption"
+        android:paddingStart="@dimen/_5sdp" />
+
+
+</RelativeLayout>

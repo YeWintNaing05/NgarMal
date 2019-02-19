@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="@dimen/_15sdp"
+        android:text="@string/enter_received_verifiation_code"
+        android:textSize="@dimen/material_text_subhead" />
+
+
+    <com.team28.borrow.presentation.custom.Pinview
+        android:id="@+id/pvCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHint"
+        android:layout_margin="@dimen/_15sdp"
+        android:focusable="true"
+        app:inputType="number"
+        app:pinLength="6"
+        app:pinWidth="@dimen/pin_width" />
+
+
+    <Button
+        android:id="@+id/btnVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/pvCode"
+        android:layout_alignRight="@id/pvCode"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@null"
+        android:padding="@dimen/_4sdp"
+        android:text="@string/verify"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/material_text_button" />
+
+</RelativeLayout>

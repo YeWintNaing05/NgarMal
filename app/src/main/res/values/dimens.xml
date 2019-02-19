@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="material_text_button">@dimen/_14ssp</dimen>
+    <dimen name="material_text_menu">@dimen/_14ssp</dimen>
+    <dimen name="material_text_caption">@dimen/_12ssp</dimen>
+    <dimen name="material_text_body1">@dimen/_14ssp</dimen>
+    <dimen name="material_text_body2">@dimen/_13ssp</dimen>
+    <dimen name="material_text_subhead">@dimen/_16ssp</dimen>
+    <dimen name="material_text_title">@dimen/_20ssp</dimen>
+    <dimen name="material_text_headline">@dimen/_24ssp</dimen>
+    <dimen name="material_text_display1">@dimen/_34ssp</dimen>
+    <dimen name="material_text_display2">@dimen/_45ssp</dimen>
+    <dimen name="material_text_display3">@dimen/_56ssp</dimen>
+    <dimen name="material_text_display4">112sp</dimen>
+    <dimen name="pagination_text_size">@dimen/_40ssp</dimen>
+    <dimen name="pin_width">@dimen/_30ssp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

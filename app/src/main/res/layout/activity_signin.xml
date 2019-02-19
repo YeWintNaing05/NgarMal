@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:background="@color/colorPrimaryDark"
+
+        android:id="@+id/rlPaginate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_56sdp"
+        >
+
+
+        <TextView
+            android:textSize="@dimen/pagination_text_size"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txtOne"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/pagination"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:textSize="@dimen/pagination_text_size"
+            android:id="@+id/txtTwo"
+
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_toEndOf="@id/txtOne"
+
+            android:layout_toRightOf="@id/txtOne"
+            android:text="@string/pagination"
+            />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/flContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlPaginate" />
+
+
+</RelativeLayout>

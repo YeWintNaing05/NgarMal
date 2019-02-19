@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:id="@+id/itemImgContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgItem"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:background="@color/colorPrimary"
+                android:scaleType="centerCrop" />
+
+
+            <com.team28.borrow.util.custom_view.MMTextView
+                android:id="@+id/txtItemState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/material_text_caption"
+                android:padding="@dimen/_10sdp"
+                android:text="Pending"
+                android:textColor="@android:color/white" />
+
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/itemTitleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/itemImgContainer"
+            android:layout_toRightOf="@id/itemImgContainer"
+            android:orientation="vertical">
+
+            <com.team28.borrow.util.custom_view.MMTextView
+                android:id="@+id/txtItemModelTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="@string/all_categories"
+                android:textSize="@dimen/material_text_subhead" />
+
+            <com.team28.borrow.util.custom_view.MMTextView
+                android:id="@+id/txtBrandName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="@string/all_categories"
+                android:textSize="@dimen/material_text_caption" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/itemPriceContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemTitleContainer"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toEndOf="@id/itemImgContainer"
+            android:layout_toRightOf="@id/itemImgContainer"
+            android:orientation="vertical">
+
+            <com.team28.borrow.util.custom_view.MMTextView
+                android:id="@+id/txtBorrowDateNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="@string/all_categories"
+                android:textSize="@dimen/material_text_body2" />
+
+            <com.team28.borrow.util.custom_view.MMTextView
+                android:id="@+id/txtBorrowFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="@string/all_categories"
+                android:textSize="@dimen/material_text_body2" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.design.card.MaterialCardView>
+

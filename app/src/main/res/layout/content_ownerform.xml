@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.team28.borrow.presentation.feature.main.MainActivity"
+    tools:showIn="@layout/activity_ownerform">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/select_category"
+                android:textSize="@dimen/material_text_subhead" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spType"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+      <!--  <RadioGroup
+            android:id="@+id/rbBorrowGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <com.team28.borrow.util.custom_view.MMRadioButton
+                android:id="@+id/rbFurniture1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="ခုံများ" />
+
+            <com.team28.borrow.util.custom_view.MMRadioButton
+                android:id="@+id/rbFurniture2"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="ပန်းကန်ခွက်ယောက်များ" />
+        </RadioGroup>
+-->
+
+
+            <EditText
+                android:layout_margin="@dimen/_5sdp"
+                android:id="@+id/edtMaterialName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/enter_model_number"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp" />
+
+
+
+            <EditText
+                android:layout_margin="@dimen/_5sdp"
+                android:id="@+id/edtMaterialBrandName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/brand_name"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp" />
+
+       <!-- <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp">
+
+            <EditText
+                android:id="@+id/edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/brand_name"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp" />
+        </android.support.design.widget.TextInputLayout>-->
+
+
+        <LinearLayout
+            android:id="@+id/extraCarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <EditText
+                    android:id="@+id/edtCarEngine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/engine_power"
+                    android:inputType="number"
+                    android:padding="@dimen/_10sdp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <EditText
+                    android:id="@+id/edtCarSeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/seat_number"
+                    android:inputType="number"
+                    android:padding="@dimen/_10sdp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/gas_or_oil"
+                    android:textSize="@dimen/material_text_subhead" />
+
+                <RadioGroup
+                    android:id="@+id/rbGasGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.team28.borrow.util.custom_view.MMRadioButton
+                        android:id="@+id/rbGas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/gas" />
+
+                    <com.team28.borrow.util.custom_view.MMRadioButton
+                        android:id="@+id/rbOil"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/oil" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/extraCameraLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <EditText
+                    android:id="@+id/edtCameraZoom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/zoom"
+                    android:inputType="number"
+                    android:padding="@dimen/_10sdp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/focus_condition"
+                    android:textSize="@dimen/material_text_subhead" />
+
+                <RadioGroup
+                    android:id="@+id/rbFocusGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rbFocusGood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/focus_good" />
+
+                    <RadioButton
+                        android:id="@+id/rbFocusBad"
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/focus_bad" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edtPicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/imgGallery"
+                    android:hint="@string/picture"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp" />
+
+                <ImageView
+                    android:id="@+id/imgGallery"
+
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <com.team28.borrow.util.custom_view.MMTextView
+                android:layout_width="match_parent"
+                android:id="@+id/txtChoose"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/choose"
+                android:textSize="@dimen/material_text_subhead" />
+
+            <com.team28.borrow.util.custom_view.MMCheckBox
+                android:id="@+id/chBorrowByDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="@string/borrow_by_day" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInputPricePerDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:visibility="gone">
+
+                <com.team28.borrow.util.custom_view.MMEditText
+                    android:id="@+id/edtPricePerDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/price_per_day"
+                    android:inputType="number"
+                    android:padding="@dimen/_10sdp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <com.team28.borrow.util.custom_view.MMCheckBox
+                android:id="@+id/chBorrowByWeek"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="@string/borrow_by_week" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInputPricePerWeek"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:visibility="gone">
+
+                <com.team28.borrow.util.custom_view.MMEditText
+                    android:id="@+id/edtPricePerWeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/price_per_week"
+                    android:inputType="number"
+                    android:padding="@dimen/_10sdp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <com.team28.borrow.util.custom_view.MMCheckBox
+                android:id="@+id/chBorrowByMonth"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="@string/borrow_by_month" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInputPricePerMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:visibility="gone">
+
+                <com.team28.borrow.util.custom_view.MMEditText
+                    android:id="@+id/edtPricePerMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/price_per_month"
+                    android:inputType="number"
+                    android:padding="@dimen/_10sdp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtInputDamage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp">
+
+            <com.team28.borrow.util.custom_view.MMEditText
+                android:id="@+id/edtDamage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:hint="@string/damage"
+                android:inputType="textMultiLine"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtRule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp">
+
+            <com.team28.borrow.util.custom_view.MMEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:focusable="false"
+                android:hint="@string/rule_and_regulation"
+                android:inputType="textMultiLine"
+                android:text="@string/owner_rule_regulation"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <com.team28.borrow.util.custom_view.MMCheckBox
+            android:id="@+id/cbAgree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_6sdp"
+            android:text="@string/agree" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/submit"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

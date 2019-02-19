@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.team28.borrow.presentation.feature.detail.fragment.DetailFragment">
+
+
+        <android.support.design.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:layout_margin="@dimen/_5sdp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imgItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.design.card.MaterialCardView>
+
+        <android.support.design.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/_3sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/iconTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/ic_title_black_24dp" />
+
+
+                    <com.team28.borrow.util.custom_view.MMTextView
+                        android:id="@+id/txtModelName"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/iconTitle"
+                        android:layout_toRightOf="@id/iconTitle"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/all_categories"
+                        android:textSize="@dimen/material_text_subhead"
+                        android:textStyle="bold" />
+
+                    <com.team28.borrow.util.custom_view.MMTextView
+                        android:id="@+id/txtBrandName"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtModelName"
+                        android:layout_toEndOf="@id/iconTitle"
+                        android:layout_toRightOf="@id/iconTitle"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:text="@string/all_categories"
+                        android:textSize="@dimen/material_text_caption" />
+
+                    <com.team28.borrow.util.custom_view.MMTextView
+                        android:id="@+id/txtDamage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtBrandName"
+                        android:layout_toEndOf="@id/iconTitle"
+                        android:layout_toRightOf="@id/iconTitle"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:text="@string/all_categories"
+                        android:textSize="@dimen/material_text_caption" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/iconDollar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/ic_attach_money_black_24dp" />
+
+                    <com.team28.borrow.util.custom_view.MMTextView
+                        android:id="@+id/txtPricePerDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/iconDollar"
+                        android:layout_toRightOf="@id/iconDollar"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/all_categories"
+                        android:textSize="@dimen/material_text_body2" />
+
+                    <com.team28.borrow.util.custom_view.MMTextView
+                        android:id="@+id/txtPricePerWeek"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtPricePerDay"
+                        android:layout_toEndOf="@id/iconDollar"
+                        android:layout_toRightOf="@id/iconDollar"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/all_categories"
+                        android:textSize="@dimen/material_text_body2" />
+
+                    <com.team28.borrow.util.custom_view.MMTextView
+                        android:id="@+id/txtPricePerMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtPricePerWeek"
+                        android:layout_toEndOf="@id/iconDollar"
+                        android:layout_toRightOf="@id/iconDollar"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/all_categories"
+                        android:textSize="@dimen/material_text_body2" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </android.support.design.card.MaterialCardView>
+
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cvCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/iconEngine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/ic_engine" />
+
+                    <com.team28.borrow.util.custom_view.MMTextView
+                        android:id="@+id/txtCarEngine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/iconEngine"
+                        android:layout_toRightOf="@id/iconEngine"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/all_categories"
+                        android:textSize="@dimen/material_text_body2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/iconGas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/ic_local_gas_station_black_24dp" />
+
+                    <com.team28.borrow.util.custom_view.MMTextView
+                        android:id="@+id/txtGasOrCar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/iconGas"
+                        android:layout_toRightOf="@id/iconGas"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/all_categories"
+                        android:textSize="@dimen/material_text_body2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/iconSeat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/ic_car_seat_with_seatbelt" />
+
+                    <com.team28.borrow.util.custom_view.MMTextView
+                        android:id="@+id/txtSeat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/iconSeat"
+                        android:layout_toRightOf="@id/iconSeat"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/all_categories"
+                        android:textSize="@dimen/material_text_body2" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </android.support.design.card.MaterialCardView>
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cvCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/iconZoom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/ic_zoom" />
+
+                    <com.team28.borrow.util.custom_view.MMTextView
+                        android:id="@+id/txtCameraZoom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/iconZoom"
+                        android:layout_toRightOf="@id/iconZoom"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/all_categories"
+                        android:textSize="@dimen/material_text_body2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/iconFocus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/ic_focus" />
+
+                    <com.team28.borrow.util.custom_view.MMTextView
+                        android:id="@+id/txtFocus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/iconFocus"
+                        android:layout_toRightOf="@id/iconFocus"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/all_categories"
+                        android:textSize="@dimen/material_text_body2" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.design.card.MaterialCardView>
+
+        <android.support.design.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="bottom"
+            app:cardBackgroundColor="@color/colorPrimary">
+
+            <com.team28.borrow.util.custom_view.MMButtonView
+                android:id="@+id/btnBorrow"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/borrow_text"
+                android:textSize="@dimen/material_text_button" />
+
+
+        </android.support.design.card.MaterialCardView>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

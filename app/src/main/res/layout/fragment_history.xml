@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".presentation.feature.history.HistoryFragment">
+
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/cvView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2.01">
+
+
+            <com.team28.borrow.util.custom_view.MMTextView
+                android:padding="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="@string/borrow_to"
+                android:id="@+id/txtBorrowTo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                 />
+
+            <View
+                android:layout_weight="0.01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@android:color/black" />
+
+            <com.team28.borrow.util.custom_view.MMTextView
+                android:padding="@dimen/_5sdp"
+
+                android:text="@string/borrow_from"
+                android:id="@+id/txtBorrowFrom"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+               />
+
+        </LinearLayout>
+
+
+    </android.support.design.card.MaterialCardView>
+
+
+    <FrameLayout
+        android:id="@+id/flHistoryContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cvView"
+        android:layout_margin="@dimen/_5sdp" />
+
+
+</RelativeLayout>
